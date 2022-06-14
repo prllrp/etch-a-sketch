@@ -1,0 +1,32 @@
+body{padding:0 ;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 960px;
+    height: 960px;
+    border: solid black 10px;
+}
+
+.row{
+    display: flex;
+    width: 960px;
+    height: 100%;
+    justify-content: space-between;
+    border: solid black 1px;
+}
+
+.column{
+    border: solid black 1px;
+    transition: all .5s;
+    width: 100%;
+    height: 100%;
+}
+
