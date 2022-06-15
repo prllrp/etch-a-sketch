@@ -1,7 +1,18 @@
+const btn = document.getElementById('btn')
+console.log(btn)
+btn.addEventListener('click', event => {
+    const width = document.getElementById('width');
+    console.log(width)
+    removeGrid();
+    drawGrid(width.value);
+})
+
+
 function drawGrid(width){
     if(width > 100){
         return 
     }
+    removeGrid();
 
     const container = document.getElementById("container");
     
@@ -39,4 +50,3 @@ function removeGrid(){
     })
 }
 
-drawGrid(100)
